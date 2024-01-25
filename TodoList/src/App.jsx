@@ -26,6 +26,11 @@ function App() {
     // Implement logic to handle form submission
     const newArray = [...tasks, formState];
     setTasks(newArray);
+    setFormState({
+      task: "", // string
+      completed: false, // boolean
+      taskAssignedTo: "", // string
+    });
   }
 
   const Delete = (index) => {
